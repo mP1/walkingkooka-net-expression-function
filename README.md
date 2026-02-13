@@ -1,12 +1,12 @@
-[![Build Status](https://github.com/mP1/walkingkooka-net-expression-function-expression-function/actions/workflows/build.yaml/badge.svg)](https://github.com/mP1/walkingkooka-net-expression-function-expression-function/actions/workflows/build.yaml/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/mP1/walkingkooka-net-expression-function-expression-function/badge.svg)](https://coveralls.io/github/mP1/walkingkooka-net-expression-function-expression-function)
+[![Build Status](https://github.com/mP1/walkingkooka-net-expression-function/actions/workflows/build.yaml/badge.svg)](https://github.com/mP1/walkingkooka-net-expression-function/actions/workflows/build.yaml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/mP1/walkingkooka-net-expression-function/badge.svg)](https://coveralls.io/github/mP1/walkingkooka-net-expression-function)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Language grade: Java](https://img.shields.io/lgtm/grade/java/g/mP1/walkingkooka-net-expression-function-expression-function.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mP1/walkingkooka-net-expression-function-expression-function/context:java)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/mP1/walkingkooka-net-expression-function-expression-function.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mP1/walkingkooka-net-expression-function-expression-function/alerts/)
-![](https://tokei.rs/b1/github/mP1/walkingkooka-net-expression-function-expression-function)
+[![Language grade: Java](https://img.shields.io/lgtm/grade/java/g/mP1/walkingkooka-net-expression-function.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mP1/walkingkooka-net-expression-function/context:java)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/mP1/walkingkooka-net-expression-function.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mP1/walkingkooka-net-expression-function/alerts/)
+![](https://tokei.rs/b1/github/mP1/walkingkooka-net-expression-function)
 [![J2CL compatible](https://img.shields.io/badge/J2CL-compatible-brightgreen.svg)](https://github.com/mP1/j2cl-central)
 
-# walkingkooka-net-expression-function-expression-function-expression-function-expression-function
+# walkingkooka-net-expression-function-expression-function
 Functions directly related to walkingkooka.net
 
 ### [Functions](https://github.com/mP1/walkingkooka-tree/blob/master/src/main/java/walkingkooka/tree/expression/function/ExpressionFunction.java)
