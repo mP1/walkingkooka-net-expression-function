@@ -406,6 +406,9 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
                     ConverterContexts.basic(
                         (l) -> {
                             throw new UnsupportedOperationException();
+                        }, // canCurrencyForLocale
+                        (l) -> {
+                            throw new UnsupportedOperationException();
                         }, // canDateTimeSymbolsForLocale
                         (l) -> {
                             throw new UnsupportedOperationException();
