@@ -23,6 +23,7 @@ import walkingkooka.convert.ConverterContexts;
 import walkingkooka.convert.Converters;
 import walkingkooka.datetime.DateTimeContexts;
 import walkingkooka.environment.EnvironmentContexts;
+import walkingkooka.locale.LocaleContext;
 import walkingkooka.locale.LocaleContexts;
 import walkingkooka.math.DecimalNumberContexts;
 import walkingkooka.net.AbsoluteUrl;
@@ -407,15 +408,6 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
                         (l) -> {
                             throw new UnsupportedOperationException();
                         }, // canCurrencyForLocale
-                        (l) -> {
-                            throw new UnsupportedOperationException();
-                        }, // canDateTimeSymbolsForLocale
-                        (l) -> {
-                            throw new UnsupportedOperationException();
-                        }, // canDecimalNumberSymbolsForLocale
-                        (lt) -> {
-                            throw new UnsupportedOperationException();
-                        }, // canLocaleForLanguageTag
                         false, // canNumbersHaveGroupSeparator
                         Converters.EXCEL_1900_DATE_SYSTEM_OFFSET, // dateTimeOffset
                         Indentation.SPACES2,
@@ -423,7 +415,8 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
                         ',', // valueSeparator
                         NetConverters.net(),
                         DateTimeContexts.fake(),
-                        DecimalNumberContexts.fake()
+                        DecimalNumberContexts.fake(),
+                        LocaleContexts.fake()
                     ),
                     EnvironmentContexts.fake(),
                     LocaleContexts.fake()
