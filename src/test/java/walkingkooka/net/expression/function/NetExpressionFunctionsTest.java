@@ -21,6 +21,7 @@ import org.junit.jupiter.api.Test;
 import walkingkooka.collect.list.Lists;
 import walkingkooka.convert.ConverterContexts;
 import walkingkooka.convert.Converters;
+import walkingkooka.currency.CurrencyLocaleContexts;
 import walkingkooka.datetime.DateTimeContexts;
 import walkingkooka.environment.EnvironmentContexts;
 import walkingkooka.locale.LocaleContext;
@@ -405,18 +406,15 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
                     },
                     CaseSensitivity.SENSITIVE,
                     ConverterContexts.basic(
-                        (l) -> {
-                            throw new UnsupportedOperationException();
-                        }, // canCurrencyForLocale
                         false, // canNumbersHaveGroupSeparator
                         Converters.EXCEL_1900_DATE_SYSTEM_OFFSET, // dateTimeOffset
                         Indentation.SPACES2,
                         LineEnding.NL,
                         ',', // valueSeparator
                         NetConverters.net(),
+                        CurrencyLocaleContexts.fake(),
                         DateTimeContexts.fake(),
-                        DecimalNumberContexts.fake(),
-                        LocaleContexts.fake()
+                        DecimalNumberContexts.fake()
                     ),
                     EnvironmentContexts.fake(),
                     LocaleContexts.fake()
