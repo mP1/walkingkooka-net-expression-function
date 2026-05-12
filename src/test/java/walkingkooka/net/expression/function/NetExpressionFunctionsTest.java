@@ -21,6 +21,8 @@ import org.junit.jupiter.api.Test;
 import walkingkooka.collect.list.Lists;
 import walkingkooka.convert.ConverterContexts;
 import walkingkooka.convert.Converters;
+import walkingkooka.currency.CurrencyExchangeRater;
+import walkingkooka.currency.CurrencyExchangeRaters;
 import walkingkooka.currency.CurrencyLocaleContexts;
 import walkingkooka.datetime.DateTimeContexts;
 import walkingkooka.environment.EnvironmentContexts;
@@ -412,6 +414,7 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
                         LineEnding.NL,
                         ',', // valueSeparator
                         NetConverters.net(),
+                        CurrencyExchangeRaters.fake(),
                         CurrencyLocaleContexts.fake(),
                         DateTimeContexts.fake(),
                         DecimalNumberContexts.fake()
