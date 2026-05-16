@@ -19,6 +19,7 @@ package walkingkooka.net.expression.function;
 
 import org.junit.jupiter.api.Test;
 import walkingkooka.collect.list.Lists;
+import walkingkooka.convert.BinaryNumberConverterFunctions;
 import walkingkooka.convert.ConverterContexts;
 import walkingkooka.convert.Converters;
 import walkingkooka.currency.CurrencyLocaleContexts;
@@ -412,6 +413,7 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
                         LineEnding.NL,
                         ',', // valueSeparator
                         NetConverters.net(),
+                        BinaryNumberConverterFunctions.fake(),
                         CurrencyLocaleContexts.fake(),
                         DateTimeContexts.fake(),
                         DecimalNumberContexts.fake()
