@@ -32,11 +32,6 @@ public abstract class NetExpressionFunctionTestCase<F extends NetExpressionFunct
     // class............................................................................................................
 
     @Override
-    public final JavaVisibility typeVisibility() {
-        return JavaVisibility.PACKAGE_PRIVATE;
-    }
-
-    @Override
     public final String typeNamePrefix() {
         return NetExpressionFunction.class.getSimpleName();
     }
