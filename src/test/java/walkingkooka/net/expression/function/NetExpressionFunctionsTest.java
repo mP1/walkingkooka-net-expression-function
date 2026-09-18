@@ -440,9 +440,4 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
     public Class<NetExpressionFunctions> type() {
         return NetExpressionFunctions.class;
     }
-
-    @Override
-    public JavaVisibility typeVisibility() {
-        return JavaVisibility.PUBLIC;
-    }
 }
