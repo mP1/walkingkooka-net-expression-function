@@ -38,6 +38,7 @@ import walkingkooka.net.convert.NetConverters;
 import walkingkooka.net.email.EmailAddress;
 import walkingkooka.reflect.JavaVisibility;
 import walkingkooka.reflect.PublicStaticHelperTesting;
+import walkingkooka.text.BinaryTextContextTesting;
 import walkingkooka.text.CaseSensitivity;
 import walkingkooka.text.Indentation;
 import walkingkooka.text.LineEnding;
@@ -47,6 +48,7 @@ import walkingkooka.tree.expression.ExpressionEvaluationContexts;
 import walkingkooka.tree.expression.ExpressionFunctionName;
 import walkingkooka.tree.expression.ExpressionNumberKind;
 import walkingkooka.tree.expression.ExpressionReference;
+import walkingkooka.tree.expression.HasExpressionNumberKindTesting;
 import walkingkooka.tree.expression.function.UnknownExpressionFunctionException;
 
 import java.lang.reflect.Method;
@@ -54,7 +56,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public final class NetExpressionFunctionsTest implements PublicStaticHelperTesting<NetExpressionFunctions> {
+public final class NetExpressionFunctionsTest implements PublicStaticHelperTesting<NetExpressionFunctions>,
+    BinaryTextContextTesting,
+    HasExpressionNumberKindTesting {
 
     // emailAddress.....................................................................................................
 
@@ -380,7 +384,7 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
                     .collect(Collectors.toList())
             ).toValue(
                 ExpressionEvaluationContexts.basic(
-                    ExpressionNumberKind.BIG_DECIMAL,
+                    EXPRESSION_NUMBER_KIND,
                     (e, c) -> {
                         throw new UnsupportedOperationException();
                     },
@@ -414,10 +418,7 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
                         ',', // valueSeparator
                         NetConverters.net(),
                         BinaryNumberConverterFunctions.fake(),
-                        TextPrinting.with(
-                            Indentation.SPACES2,
-                            LineEnding.NL
-                        ).setCharset(StandardCharsets.UTF_8),
+                        BINARY_TEXT_CONTEXT,
                         CurrencyLocaleContexts.fake(),
                         DateTimeContexts.fake(),
                         DecimalNumberContexts.fake()
