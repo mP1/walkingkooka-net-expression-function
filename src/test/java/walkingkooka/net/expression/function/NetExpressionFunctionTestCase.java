@@ -21,8 +21,9 @@ import walkingkooka.reflect.ClassTesting;
 import walkingkooka.reflect.JavaVisibility;
 import walkingkooka.tree.expression.ExpressionEvaluationContext;
 import walkingkooka.tree.expression.function.ExpressionFunctionTesting;
+import walkingkooka.tree.expression.function.ExpressionFunctionTesting2;
 
-public abstract class NetExpressionFunctionTestCase<F extends NetExpressionFunction<T, C>, T, C extends ExpressionEvaluationContext> implements ExpressionFunctionTesting<F, T, C>,
+public abstract class NetExpressionFunctionTestCase<F extends NetExpressionFunction<T, C>, T, C extends ExpressionEvaluationContext> implements ExpressionFunctionTesting2<F, T, C>,
     ClassTesting<F> {
 
     NetExpressionFunctionTestCase() {
