@@ -416,7 +416,12 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
                         false, // canNumbersHaveGroupSeparator
                         Converters.EXCEL_1900_DATE_SYSTEM_OFFSET, // dateTimeOffset
                         ',', // valueSeparator
-                        NetConverters.net(),
+                        Converters.collection(
+                            Lists.of(
+                                NetConverters.net(),
+                                Converters.toText()
+                            )
+                        ),
                         BinaryNumberConverterFunctions.fake(),
                         BINARY_TEXT_CONTEXT,
                         CurrencyLocaleContexts.fake(),
