@@ -27,6 +27,8 @@ import walkingkooka.datetime.DateTimeContexts;
 import walkingkooka.environment.EnvironmentContexts;
 import walkingkooka.locale.LocaleContext;
 import walkingkooka.locale.LocaleContexts;
+import walkingkooka.logging.LoggingContext;
+import walkingkooka.logging.LoggingContexts;
 import walkingkooka.math.DecimalNumberContexts;
 import walkingkooka.net.AbsoluteUrl;
 import walkingkooka.net.DataUrl;
@@ -428,8 +430,8 @@ public final class NetExpressionFunctionsTest implements PublicStaticHelperTesti
                         DateTimeContexts.fake(),
                         DecimalNumberContexts.fake()
                     ),
-                    EnvironmentContexts.fake(),
-                    LocaleContexts.fake()
+                    LocaleContexts.fake(),
+                    LoggingContexts.fake()
                 )
             )
         );
